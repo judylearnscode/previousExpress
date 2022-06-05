@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='css/style.css'>
+
+    <title>To Do List</title>
+</head>
+<body>
+    <img class="notePad" src="img/title1.png" alt="banner image">
+
+    <section class="page"> 
+
+        <form action="/todos" method="POST">
+            <input id="todoInput" type="text" placeholder="Ex. laundry" name="item">
+            <input type="hidden" name="checkedOff" value="no">
+            <button id="submitBtn">Submit</button>
+        </form>
+    
+        <ul id="todoList">
+        <% for(var i=0; i<todos.length; i++) {%>
+            <li>
+            <span class="listItems"><%= todos[i].item %></span>
+            <span class="hidden"><%= todos[i].checkedOff %></span>
+            </li>
+        <% } %>
+        </ul>
+
+        <!-- <p class="font">Goals Left:<span id="listCount">0</span></p> -->
+
+        <button id="clearBtn">Clear All</button>
+        <button id="clearCrossed">Clear Completed</button>
+    </section>
+
+    <script rel="javascript" src="/js/main.js"></script>
+</body>
+</html>

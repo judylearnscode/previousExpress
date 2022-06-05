@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  font-family: 'Poppins', Futura, sans-serif;
+  background: #e1f0f8;
+  background-image: url('../img/wallpaper.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+.notePad {
+  width: 400px;
+}
+
+li {
+  font-size: 16 px;
+  color: rgb(26, 77, 163);
+  list-style-type:none;
+  text-align:center;
+
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: rgb(0, 0, 0);;
+}
+
+button {
+  font-family: 'Poppins', Futura, sans-serif;
+  border-radius: 5px;
+  background-color:rgb(229, 213, 242);
+  border-width: 1px;
+
+}
+
+input {
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.hidden{
+  display: none;
+}
